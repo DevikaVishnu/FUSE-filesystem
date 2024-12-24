@@ -8,7 +8,7 @@ FUSE is an interface that allows us to call our own functions instead of using t
 - Open and close a file
 
 ## Usage:
-1. cd into the directory and create a mount point:
+1. ```cd``` into the directory and create a mount point:
 ```
 cd FUSE-filesystem
 mkdir mountpoint
@@ -18,4 +18,4 @@ mkdir mountpoint
 $ gcc FUSE-filesystem.c -o FUSE-filesystem `pkg-config fuse --cflags --libs`
 $ ./ FUSE-filsystem - f path/ to/ mountpoint
 ```
-3. CHange your working directory to ```mountpoint``` and use your custom-made filesystem!
+3. Change your working directory to ```mountpoint``` and use your custom-made filesystem!
